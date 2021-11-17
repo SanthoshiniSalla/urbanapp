@@ -1,0 +1,10 @@
+const express =require('express')
+const router=express.Router()
+const upload=require('../middleware/upload')
+const AuthController=require('../controllers/AuthController')
+const serviceProvider=require('../controllers/serviceProvider')
+router.post('/register',upload.single('img'),AuthController.register)
+router.post('/login',AuthController.login)
+router.post('/providerregister',serviceProvider.register)
+router.post('/providerlogin',serviceProvider.login)
+module.exports=router

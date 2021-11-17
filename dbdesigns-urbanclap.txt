@@ -1,0 +1,41 @@
+urban clap:
+
+1.user:
+registration:--
+name:String
+email:String
+phone:Number
+passsword:String
+img:file
+
+login:--
+username:String
+password:String
+
+bookingServices:--
+serviceType:String
+price:Number
+address:String
+email:String
+phone:Number
+timeSlot:timestamp
+
+view the serviceprovider details
+
+2.serviceProvider
+register:-
+name:String
+email:String
+adhar:Number
+phone:Number
+serviceType:String
+
+login:-
+username:String
+password:String
+
+view usersdetails
+update profile
+
+3.sending confirmation mail to user
+
